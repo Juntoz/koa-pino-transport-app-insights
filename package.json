@@ -1,0 +1,32 @@
+{
+  "name": "@juntoz/koa-pino-transport-app-insights",
+  "version": "0.0.1",
+  "description": "Pino transport for Microsoft Azure Application Insights",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juntoz/koa-pino-transport-app-insights.git"
+  },
+  "keywords": [
+    "koa",
+    "pino",
+    "application-insights",
+    "juntoz"
+  ],
+  "author": "Juntoz.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juntoz/koa-pino-transport-app-insights/issues"
+  },
+  "homepage": "https://github.com/Juntoz/koa-pino-transport-app-insights#readme",
+  "dependencies": {
+    "applicationinsights": "^1.2.0",
+    "pump": "^3.0.0",
+    "split2": "^3.1.0",
+    "through2": "^3.0.0",
+    "yargs": "^13.2.1"
+  }
+}

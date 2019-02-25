@@ -1,0 +1,73 @@
+ Examples of pino output
+
+{
+    "level": 30,
+    "time": 1550834840505,
+    "msg": "app-api: ./api/api.js success",
+    "pid": 1,
+    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "v": 1
+}
+
+{
+    "level": 30,
+    "time": 1550915770301,
+    "msg": "request completed",
+    "pid": 1,
+    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "req": {
+        "id": 4,
+        "method": "GET",
+        "url": "/",
+        "headers": {
+            "host": "20.185.209.181",
+            "user-agent": "Mozilla/5.0 zgrab/0.x",
+            "accept": "*/* ",
+            "accept-encoding": "gzip"
+        },
+        "remoteAddress": "::ffff:10.240.255.56",
+        "remotePort": 56554
+    },
+    "res": {
+        "statusCode": 404,
+        "headers": {
+        "x-request-id": "771eae1f724248a8945a1c8a879bdf8f",
+        "content-type": "text/plain; charset=utf-8",
+        "content-length": "9"
+    }
+    "responseTime": 1,
+    "v": 1
+}
+
+{
+    "level": 50,
+    "time": 1551125769356,
+    "msg": "request errored",
+    "pid": 1,
+    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "req": {
+        "id": 22,
+            "method": "GET",
+                "url": "/geocode?address1=Av%20Javier%20Prado%20Oeste%201586&address2=&provinceStateName=&countryCode=",
+                    "headers": {
+            "host": "api-geolocation.juntoz.com",
+                "request-context": "appId=cid-v1:001d9fc0-7f8f-4af0-b5d5-32705dce9a5b",
+                    "request-id": "|006ae4b945ebdd48b901686d73774156.5ae2b69d_2.",
+                        "connection": "Keep-Alive"
+        },
+        "remoteAddress": "::ffff:10.240.255.56",
+            "remotePort": 56040
+    },
+    "res": {
+        "statusCode": 404,
+            "headers": {
+            "x-request-id": "3040c92490b04422bc37e37d4a6c5839"
+        }
+    },
+    "err": {
+        "type": "BadRequestError",
+            "message": "geocode: countryCode parameter is required",
+                "stack": "BadRequestError: geocode: countryCode parameter is required\n    at Object.throw (/dist/node_modules/koa/lib/context.js:97:11)\n    at _geocode (/dist/api/geocoding.js:46:18)\n    at dispatch (/dist/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)\n    at next (/dist/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)\n    at /dist/node_modules/koa-router/lib/router.js:346:16\n    at dispatch (/dist/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)\n    at /dist/node_modules/koa-router/node_modules/koa-compose/index.js:36:12\n    at dispatch (/dist/node_modules/koa-router/lib/router.js:351:31)\n    at dispatch (/dist/node_modules/koa-compose/index.js:42:32)\n    at /dist/node_modules/koa-passport/lib/framework/koa.js:60:14"
+    },
+    "v": 1
+}
