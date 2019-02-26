@@ -1,4 +1,13 @@
 {
+    "level": 30,
+    "time": 1550834840505,
+    "msg": "app-api: ./api/api.js success",
+    "pid": 1,
+    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "v": 1
+}
+
+{
     "level": 50,
     "time": 1551131039482,
     "msg": "request errored",
