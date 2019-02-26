@@ -65,11 +65,11 @@ var onRequest = function(obj) {
         /**
          * Request source. This encapsulates the information about the component that initiated the request
          */
-        source?: JSON.stringify(obj.req),
+        source: JSON.stringify(obj.req),
         /**
          * Request duration in ms
          */
-        duration: 0,
+        duration: obj.responseTime,
         /**
          * Result code reported by the application
          */
@@ -81,4 +81,8 @@ var onRequest = function(obj) {
     };
 }
 
-pump(process.stdin, split(parseJson), pinoAppInsights({ appInsightsInstrumKey: argv.aiinskey }));
+pump(
+    process.stdin,
+    split(parseJson),
+    pinoAppInsights({ appInsightsInstrumKey: argv.aiinskey })
+);
