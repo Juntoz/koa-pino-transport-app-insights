@@ -39,3 +39,6 @@ module.exports = (pLevel) => {
 
     return aiLevel;
 };
+
+module.exports.PINO_ERROR = P_ERR;
+module.exports.PINO_INFO = P_INFO;
