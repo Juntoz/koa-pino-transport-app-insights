@@ -4,7 +4,7 @@ const pump = require('pump');
 const split = require('split2');
 const appInsights = require("applicationinsights");
 
-const pinoThroughAppInsights = require('./pino-app-insights.js');
+const pinoThroughAppInsights = require('./through-app-insights.js');
 
 const argv = require('yargs')
     .usage('Usage: $0 --aikey [application insights instrumentation key]')
