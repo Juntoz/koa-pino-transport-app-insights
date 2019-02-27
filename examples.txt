@@ -1,9 +1,9 @@
 {
     "level": 30,
     "time": 1550834840505,
-    "msg": "app-api: ./api/api.js success",
+    "msg": "api.js success",
     "pid": 1,
-    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "hostname": "myhostname",
     "v": 1
 }
 
@@ -12,17 +12,17 @@
     "time": 1551131039482,
     "msg": "request errored",
     "pid": 1,
-    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "hostname": "myhostname",
     "req": {
         "id": 28,
         "method": "GET",
-        "url": "/geocode?provinceStateName=Trujillo&address1=Liverpool%20470&countryCode=PE&address2=Trujillo",
+        "url": "/getdata?id=1",
         "headers": {
             "cache-control": "no-cache",
             "postman-token": "410ffbfd-9a8e-4298-b468-a5c6bd5d1b80",
             "user-agent": "PostmanRuntime/7.6.0",
             "accept": "*/*",
-            "host": "api-geolocation.juntoz.com",
+            "host": "callerhost.com",
             "accept-encoding": "gzip, deflate",
             "connection": "keep-alive"
         },
@@ -37,8 +37,8 @@
     },
     "err": {
         "type": "NotFoundError",
-        "message": "geocode: googlemaps did not return [\"street_address\",\"premise\",\"subpremise\"]",
-        "stack": "NotFoundError: geocode: googlemaps did not return [\"street_address\",\"premise\",\"subpremise\"]\n    at Object.throw (/dist/node_modules/koa/lib/context.js:97:11)\n    at _processResponse (/dist/api/geocoding.js:75:18)\n    at _geocode (/dist/api/geocoding.js:65:9)\n    at process.internalTickCallback (internal/process/next_tick.js:77:7)"
+        "message": "id 1 not found",
+        "stack": "NotFoundError: id 1 not found\n    at Object.throw (/dist/node_modules/koa/lib/context.js:97:11)\n    at _processResponse (/dist/api/myapi.js:75:18)\n    at _geocode (/dist/api/myapi.js:65:9)\n    at process.internalTickCallback (internal/process/next_tick.js:77:7)"
     },
     "v": 1
 }
@@ -48,13 +48,13 @@
     "time": 1551136856625,
     "msg": "request completed",
     "pid": 1,
-    "hostname": "wk-caas-52d8cd5703884374a50d7548108b0b64-03f47e8d49a79d23b2d7e3",
+    "hostname": "myhostname",
     "req": {
         "id": 31,
         "method": "GET",
-        "url": "/geocode?address1=Av%20Javier%20Prado%20Oeste%201586&address2=SAN%20ISIDRO&provinceStateName=LIMA&countryCode=PE",
+        "url": "/getdata?id=20",
         "headers": {
-            "host": "api-geolocation.juntoz.com",
+            "host": "callerhost.com",
             "request-context": "appId=cid-v1:001d9fc0-7f8f-4af0-b5d5-32705dce9a5b",
             "request-id": "|17458ce9b2bd094d976612caee1845b3.7a3cb57a_12.",
             "connection": "Keep-Alive"
